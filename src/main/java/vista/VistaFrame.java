@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author DIEGO MALDONADO
+ * @author KARIN MONTERROSO
  */
 public class VistaFrame extends javax.swing.JFrame {
 
@@ -16,6 +16,9 @@ public class VistaFrame extends javax.swing.JFrame {
      */
     public VistaFrame() {
         initComponents();
+        this.setVisible(true);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**

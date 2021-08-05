@@ -5,14 +5,10 @@
  */
 package controlador;
 
-import vista.VistaFrame;
-
 /**
  *
  * @author DIEGO MALDONADO
  */
-public class Main {
-    public static void main(String args[]){
-        VistaFrame vista = new VistaFrame();
-    }
+public class Controlador {
+ 
 }
