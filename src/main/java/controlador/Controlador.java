@@ -87,8 +87,12 @@ public class Controlador {
             areaTexto.append(String.valueOf(Tipo.IDENTIFICADOR)+": "+lexema[i]);
             areaTexto.append(System.getProperty("line.separator")); 
         }
-        else if(contadorDecimal>0 && contadorNumeros>1){
+        else if(contadorDecimal==1 && contadorNumeros>1){
             areaTexto.append(String.valueOf(Tipo.NUMERO_DECIMAL)+": "+lexema[i]);
+            areaTexto.append(System.getProperty("line.separator")); 
+        }
+        else if(contadorDecimal==1 && contadorLetras>0 || contadorDecimal==1 && contadorCaracteres>0){
+            areaTexto.append("ERROR: "+lexema[i]);
             areaTexto.append(System.getProperty("line.separator")); 
         }
         }
