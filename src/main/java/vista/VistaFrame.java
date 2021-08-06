@@ -97,6 +97,9 @@ public class VistaFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonAnalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAnalizarActionPerformed
+        /**
+         * Instanciamos un objeto de tipo controlador, esta clase desarrolla toda la logica del analizador
+         */
         Controlador controlador = new Controlador();
         controlador.analizadorLexico(controlador.separacionTextoInicial(this.jTextArea1), jTextArea2);
     }//GEN-LAST:event_botonAnalizarActionPerformed

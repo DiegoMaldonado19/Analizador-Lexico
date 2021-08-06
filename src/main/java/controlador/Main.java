@@ -13,6 +13,9 @@ import vista.VistaFrame;
  */
 public class Main {
     public static void main(String args[]){
+        /**
+         * Instanciamos un objeto del frame para iniciar la vista
+         */
         VistaFrame vista = new VistaFrame();
     }
 }
