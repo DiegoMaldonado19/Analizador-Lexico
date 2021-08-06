@@ -5,10 +5,22 @@
  */
 package controlador;
 
+import javax.swing.JTextArea;
+import modelo.Token;
+import modelo.Tipo;
+
 /**
  *
  * @author DIEGO MALDONADO
  */
 public class Controlador {
- 
+        public String[] separacionTextoInicial(JTextArea areaTexto){
+            String[] lexema = new String[areaTexto.getColumns()];
+            lexema = areaTexto.getText().split("\n");
+            return lexema;
+        }
+        
+        public void analizadorLexico(String[] lexema, JTextArea areaTexto){
+            
+        }
 }
