@@ -41,6 +41,10 @@ public class Controlador {
        int contadorLetras=0, contadorNumeros=0, contadorCaracteres=0, contadorDecimal=0;
        char[] caracter;
        for(int i=0; i<lexema.length; i++){
+           contadorLetras=0;
+           contadorNumeros=0;
+           contadorCaracteres=0; 
+           contadorDecimal=0;
            caracter = lexema[i].toCharArray();
            for(int j=0; j<caracter.length; j++){
                if(caracter[j]=='A' || caracter[j]=='B' || caracter[j]=='C' || caracter[j]=='D' || caracter[j]=='E'
@@ -83,10 +87,10 @@ public class Controlador {
             areaTexto.append(String.valueOf(Tipo.IDENTIFICADOR)+": "+lexema[i]);
             areaTexto.append(System.getProperty("line.separator")); 
         }
-        else if(contadorDecimal>0){
+        else if(contadorDecimal>0 && contadorNumeros>1){
             areaTexto.append(String.valueOf(Tipo.NUMERO_DECIMAL)+": "+lexema[i]);
             areaTexto.append(System.getProperty("line.separator")); 
         }
-       }
+        }
     }
 }
