@@ -5,8 +5,8 @@
  */
 package controlador;
 
+import java.util.ArrayList;
 import javax.swing.JTextArea;
-import modelo.Token;
 import modelo.Tipo;
 
 /**
@@ -25,7 +25,7 @@ public class Controlador {
          * Nos ayudamos del metodo split para poder almacenar cada linea del lexema
          */
         String[] lexema = new String[areaTexto.getColumns()];
-        lexema = areaTexto.getText().split("\n");
+        lexema = areaTexto.getText().split(" ");
         /**
          * Retornamos el arreglo
          */
@@ -33,6 +33,8 @@ public class Controlador {
     }
         
     public void analizadorLexico(String[] lexema, JTextArea areaTexto){
-            
+       for(int i=0; i<lexema.length; i++){
+           
+       }
     }
 }

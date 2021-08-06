@@ -11,22 +11,10 @@ package modelo;
  */
 public enum Tipo {
     /**
-     * Eumeraciones que estan instanciadas
+     * Eumeraciones
      */
-    NUMERO ("[0-9]+"),
-    ID ("[a-z][A-Z]+"),
-    NUMERO_DECIMAL ("[0-9]+[.][0-9]+");
-    
-    /**
-     * Constante que será el patron
-     */
-    public final String patron;
-    
-    /**
-     * Constructor para instanciar objetos 
-     * @param s 
-     */
-    Tipo(String s){
-        this.patron = s;
-    }  
+    NUMERO,
+    IDENTIFICADOR,
+    NUMERO_DECIMAL,
+    CARACTER
 }
